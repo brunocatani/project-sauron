@@ -1,25 +1,21 @@
 # Project Sauron
 
---PT-BR--
+- This project was built with the purpose of an automated attendance system using the Nvidia Jetson Nano 4GB
 
-
- 
-Esse projeto é parte do "Projeto Integrador 2022/2" supervisionado pelo professor Rafael Barvosa
-
-Este projeto tem como objetivo construir um sistema de tomada de presença utilizando um Nvidia Jetson Nano 4GB
+- This repository is an translation from PT-BR and adaptation for entry in the Nvidia Jetson Specialist Certification Program of the Sauron system hosted here: https://github.com/brunocatani/Sauron
 
 
 
-Hardware necessario:
+Required Hardware:
 
-- Nvidia Jetson Nano
-- Camera CSI/USB
-- Dongle WI-FI
+- Nvidia Jetson Nano 4GB
+- CSI/USB Camera 
+- WI-FI Dongle/Module (Intel 8265AC M.2 Key E)
 
 
 ## Requerimentos 
 
-- OpenCV 4.6.0 Compilado para CUDA & CUDNN: 
+- OpenCV 4.6.0 compiled with CUDA & CUDNN: 
 https://github.com/opencv/opencv/releases
 
 - Jetpack SDK 4.6.2: 
@@ -36,22 +32,23 @@ https://github.com/python-telegram-bot/python-telegram-bot
 
 
 
-## Compilando OpenCV com CUDA na Jetson Nano
+## Compiling OpenCV with CUDA on the Jetson Nano
 
-Tutorial por completo por QENGINEERING
+Complete tutorial by QENGINEERING
 https://qengineering.eu/install-opencv-4.5-on-jetson-nano.html
 
-## Compilando DLIB com CUDA + Face-Recognition
+## Compiling DLIB with CUDA + Face-Recognition install
 
+- Installing base dependencies
 - Instalando dependências base
 
-CTRL+T para abrir terminal
+Open terminal with CTRL+T 
 
 ```
 sudo apt-get update
 sudo apt-get install python3-pip cmake libopenblas-dev liblapack-dev libjpeg-dev
 ```
-- Dependência Numpy
+- Numpy installation
 ```
 pip3 install numpy
 ```
